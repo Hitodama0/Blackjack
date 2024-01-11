@@ -11,7 +11,27 @@
 
     <h1>The Blackjack game</h1>
 
-    <div id="container"></div>
-    
+    <div id="container">
+        <div id="computerDeck"></div>
+        <div id="playerDeck"></div>
+    </div>
+
+    <button id="pullCard">Pull a card</button>
+    <button id="stopPulling">Stop pulling</button>
+    <button id="resetGame">Reset game</button>
+
+    <dialog>
+        <p>Choose the ace value!</p>
+        <form id="aceValue">
+            <button type="button" name="valueOne" id="valueOne">1</button> <br>
+            <button type="button" name="valueEleven" id="valueEleven">11</button> <br>
+        </form>
+    </dialog>
+    <div id="gameResult">
+       <!-- <p>Player Score: <span id="playerScore">0</span></p>
+        <p>Computer Score: <span id="computerScore">0</span></p>-->
+        <p>Winner: <span id="winner">---</span></p>
+    </div>
+
 </body>
 </html>
